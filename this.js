@@ -20,3 +20,13 @@
         
         const obj1 = new C()
         // value of this point to newly created object 
+
+// Rule 3 
+
+        function d(){
+            console.log(this)
+        }
+
+        d.call({a:2});
+        d.apply({b: 3})
+        // value of this point to object which we pass inside call and apply method
