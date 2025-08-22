@@ -30,3 +30,14 @@
         d.call({a:2});
         d.apply({b: 3})
         // value of this point to object which we pass inside call and apply method
+
+// Rule 4
+
+        function e(){
+            console.log(this)
+        }
+        const obj2 = {
+            id: 5
+        }
+        obj2.e();
+        // value of this point to that object which call that function 
